@@ -20,7 +20,7 @@ include 'database.php';
 <body>
 
     <header>
-        <img src="" alt="">
+        <img src="img/logo.png" alt="">
     </header>
 
     <div class="cds-container">
