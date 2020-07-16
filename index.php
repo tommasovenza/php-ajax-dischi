@@ -19,8 +19,11 @@ include 'database.php';
 
 <body>
 
+    <header>
+        <img src="" alt="">
+    </header>
 
-    <div class="container">
+    <div class="cds-container">
 
         <?php foreach ($database as $value_singolo_disco) { ?>
             <div class="disco">
