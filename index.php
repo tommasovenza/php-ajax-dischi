@@ -20,16 +20,21 @@ include 'database.php';
 <body>
 
 
-    <div class="disco">
+    <div class="container">
 
-    <!-- scrivo il ciclo foreach -->
         <?php foreach ($database as $value_singolo_disco) { ?>
-            <img src="<?php echo $value_singolo_disco['poster'] ?>" alt="immagine-disco">
-            <h3> <?php echo $value_singolo_disco['title']; ?> </h3>
-            <span> <?php echo $value_singolo_disco['author']; ?></span>
-            <span> <?php echo $value_singolo_disco['year']; ?></span>
-        <?php } ?>
+            <div class="disco">
 
+                <!-- scrivo il ciclo foreach -->
+                
+                <img src="<?php echo $value_singolo_disco['poster'] ?>" alt="immagine-disco">
+                <h3> <?php echo $value_singolo_disco['title']; ?> </h3>
+                <span> <?php echo $value_singolo_disco['author']; ?></span>
+                <span> <?php echo $value_singolo_disco['year']; ?></span>
+                
+
+            </div>
+        <?php } ?>
     </div>
 
 
