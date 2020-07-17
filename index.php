@@ -1,9 +1,3 @@
-<?php 
-
-include 'database.php';
-
-?>
-
 <!-- html -->
 <!DOCTYPE html>
 <html lang="en">
@@ -14,6 +8,10 @@ include 'database.php';
     <!-- Lato google font -->
     <link rel="stylesheet" href="dist/app.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 
@@ -23,24 +21,27 @@ include 'database.php';
         <img src="img/logo.png" alt="">
     </header>
 
+
+    <!-- contenitore dischi -->
     <div class="cds-container">
 
-        <?php foreach ($database as $value_singolo_disco) { ?>
+            <!-- singolo disco -->
             <div class="disco">
-
-                <!-- scrivo il ciclo foreach -->
-                
-                <img src="<?php echo $value_singolo_disco['poster'] ?>" alt="immagine-disco">
-                <h3> <?php echo $value_singolo_disco['title']; ?> </h3>
-                <span> <?php echo $value_singolo_disco['author']; ?></span>
-                <span> <?php echo $value_singolo_disco['year']; ?></span>
-                
-
+                <img src=" {{ poster }} " alt="immagine-disco">
+                <h3> {{ title }} </h3>
+                <span> {{ author }} </span>
+                <span> {{ year }}</span>
             </div>
-        <?php } ?>
+    
     </div>
 
+    <!-- template sorgente di handlebars -->
+    <script id="entry-template" type="text/x-handlebars-template">
+       
 
+    </script>
+
+<script src="src/app.js"></script>
 
 </body>
 
