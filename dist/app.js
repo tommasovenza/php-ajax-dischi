@@ -93,7 +93,16 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+$(document).ready(function () {
+  $.ajax({
+    url: 'http://localhost:8888/php-ajax-dischi/server.php',
+    method: 'GET',
+    success: function success() {},
+    error: function error() {
+      alert('qualcosa non va!');
+    }
+  }); // fine chiamata ajax
+}); // end document ready
 
 /***/ }),
 
