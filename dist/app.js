@@ -124,7 +124,8 @@ $(document).ready(function () {
       };
       var html = template(context);
       $('#cds-container').append(html);
-    }
+    } // fine ciclo for
+
   } // fine funzione
 
 }); // end document ready

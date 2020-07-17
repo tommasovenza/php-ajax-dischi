@@ -6,7 +6,7 @@ $(document).ready(function() {
         method: 'GET',
 
         success: function(data) {
-            
+        
             stampaDischi(data);
         },
         
@@ -42,17 +42,9 @@ $(document).ready(function() {
             var html = template(context);
 
             $('#cds-container').append(html);
-        }
-
-        
-
-        
-        
+        }   // fine ciclo for
 
     } // fine funzione
-
-
-
 
 }); // end document ready
 
