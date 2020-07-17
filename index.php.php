@@ -23,7 +23,7 @@ include 'database.php';
         <img src="img/logo.png" alt="">
     </header>
 
-    <div class="cds-container">
+    <div id="cds-container">
 
         <?php foreach ($database as $value_singolo_disco) { ?>
             <div class="disco">

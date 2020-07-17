@@ -26,7 +26,7 @@ header img {
   margin-left: 100px;
 }
 
-.cds-container {
+#cds-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -35,12 +35,12 @@ header img {
   margin: 0 auto;
 }
 
-.cds-container h3 {
+#cds-container h3 {
   color: #fff;
   text-align: center;
 }
 
-.cds-container span {
+#cds-container span {
   color: #000;
 }
 

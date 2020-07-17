@@ -38,13 +38,15 @@ $(document).ready(function() {
                 author: autore,
                 year: anno
             }
-    
+            
             var html = template(context);
-    
-            $('.disco').append(html);
+
+            $('#cds-container').append(html);
         }
 
+        
 
+        
         
 
     } // fine funzione

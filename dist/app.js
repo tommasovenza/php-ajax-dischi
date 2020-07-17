@@ -123,7 +123,7 @@ $(document).ready(function () {
         year: anno
       };
       var html = template(context);
-      $('.disco').append(html);
+      $('#cds-container').append(html);
     }
   } // fine funzione
 

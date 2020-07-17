@@ -25,22 +25,22 @@
 
 
     <!-- contenitore dischi -->
-    <div class="cds-container">
+    <div id="cds-container">
 
-        <!-- singolo disco -->
-        <div class="disco">
-
-        </div>
-
+        
     </div>
 
     <!-- template sorgente di handlebars -->
     <script id="entry-template" type="text/x-handlebars-template">
-
-                <img src=" {{ poster }} " alt="immagine-disco">
-                <h3> {{ title }} </h3>
-                <span> {{ author }} </span>
-                <span> {{ year }}</span>
+    
+        <!-- singolo disco -->
+        <div class="disco">
+            <img src=" {{ poster }} " alt="immagine-disco">
+            <h3> {{ title }} </h3>
+            <span> {{ author }} </span>
+            <span> {{ year }}</span>
+        </div>
+                
 
     </script>
 
