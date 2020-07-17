@@ -12,6 +12,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
     <title>Document</title>
 </head>
 
@@ -25,23 +27,24 @@
     <!-- contenitore dischi -->
     <div class="cds-container">
 
-            <!-- singolo disco -->
-            <div class="disco">
-                <img src=" {{ poster }} " alt="immagine-disco">
-                <h3> {{ title }} </h3>
-                <span> {{ author }} </span>
-                <span> {{ year }}</span>
-            </div>
-    
+        <!-- singolo disco -->
+        <div class="disco">
+
+        </div>
+
     </div>
 
     <!-- template sorgente di handlebars -->
     <script id="entry-template" type="text/x-handlebars-template">
-       
+
+                <img src=" {{ poster }} " alt="immagine-disco">
+                <h3> {{ title }} </h3>
+                <span> {{ author }} </span>
+                <span> {{ year }}</span>
 
     </script>
 
-<script src="src/app.js"></script>
+    <script src="src/app.js"></script>
 
 </body>
 
